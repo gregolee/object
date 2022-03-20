@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/jaeyounglee/Personal/Projects/object/src/main/java/ch01/step01/ticket/prev/domain</OriginalElement>
+  <nodes>
+    <node x="30.91477272727269" y="132.0">ch01.step01.ticket.prev.domain.TicketOffice</node>
+    <node x="-187.5852272727273" y="-221.0">ch01.step01.ticket.prev.domain.Audience</node>
+    <node x="30.91477272727269" y="-221.0">ch01.step01.ticket.prev.domain.Bag</node>
+    <node x="310.0511363636364" y="-221.0">ch01.step01.ticket.prev.domain.Invitation</node>
+    <node x="345.0511363636364" y="-82.0">ch01.step01.ticket.prev.domain.Ticket</node>
+    <node x="-230.08522727272728" y="132.0">ch01.step01.ticket.prev.domain.TicketSeller</node>
+    <node x="310.0511363636364" y="325.0">ch01.step01.ticket.prev.domain.Theater</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ch01.step01.ticket.prev.domain.Theater" target="ch01.step01.ticket.prev.domain.Ticket" relationship="DEPENDENCY">
+      <point x="11.5" y="-39.0" />
+      <point x="15.0" y="39.0" />
+    </edge>
+    <edge source="ch01.step01.ticket.prev.domain.TicketSeller" target="ch01.step01.ticket.prev.domain.TicketOffice" relationship="TO_ONE">
+      <point x="15.0" y="-39.0" />
+      <point x="-111.58522727272728" y="177.5" />
+      <point x="157.4147727272727" y="177.5" />
+      <point x="15.0" y="94.0" />
+    </edge>
+    <edge source="ch01.step01.ticket.prev.domain.Theater" target="ch01.step01.ticket.prev.domain.TicketSeller" relationship="TO_ONE">
+      <point x="-94.5" y="-15.0" />
+      <point x="-121.44886363636368" y="349.0" />
+      <point x="-121.44886363636368" y="210.0" />
+      <point x="-17.863636363636402" y="39.0" />
+    </edge>
+    <edge source="ch01.step01.ticket.prev.domain.Bag" target="ch01.step01.ticket.prev.domain.Invitation" relationship="TO_ONE">
+      <point x="-35.55113636363632" y="-127.0" />
+      <point x="97.86363636363637" y="-160.0" />
+      <point x="386.0511363636364" y="-160.0" />
+      <point x="-15.0" y="39.0" />
+    </edge>
+    <edge source="ch01.step01.ticket.prev.domain.Bag" target="ch01.step01.ticket.prev.domain.Invitation" relationship="DEPENDENCY">
+      <point x="-20.551136363636317" y="-127.0" />
+      <point x="112.86363636363637" y="-182.0" />
+      <point x="401.0511363636364" y="-182.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="ch01.step01.ticket.prev.domain.Audience" target="ch01.step01.ticket.prev.domain.Bag" relationship="DEPENDENCY">
+      <point x="-2.863636363636374" y="-39.0" />
+      <point x="-129.44886363636368" y="-195.0" />
+      <point x="133.4147727272727" y="-195.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="ch01.step01.ticket.prev.domain.TicketSeller" target="ch01.step01.ticket.prev.domain.TicketOffice" relationship="DEPENDENCY">
+      <point x="0.0" y="-39.0" />
+      <point x="-126.58522727272728" y="154.5" />
+      <point x="142.4147727272727" y="154.5" />
+      <point x="0.0" y="94.0" />
+    </edge>
+    <edge source="ch01.step01.ticket.prev.domain.Audience" target="ch01.step01.ticket.prev.domain.Bag" relationship="TO_ONE">
+      <point x="12.136363636363626" y="-39.0" />
+      <point x="-114.44886363636368" y="-165.0" />
+      <point x="148.4147727272727" y="-165.0" />
+      <point x="15.0" y="127.0" />
+    </edge>
+    <edge source="ch01.step01.ticket.prev.domain.Theater" target="ch01.step01.ticket.prev.domain.TicketSeller" relationship="DEPENDENCY">
+      <point x="-94.5" y="15.0" />
+      <point x="310.0511363636364" y="369.0" />
+      <point x="-144.58522727272725" y="369.0" />
+      <point x="-144.58522727272725" y="171.0" />
+      <point x="-103.5" y="0.0" />
+    </edge>
+    <edge source="ch01.step01.ticket.prev.domain.Bag" target="ch01.step01.ticket.prev.domain.Ticket" relationship="DEPENDENCY">
+      <point x="-1.3636363631519544E-4" y="-127.0" />
+      <point x="133.41463636363636" y="-49.0" />
+      <point x="401.0511363636364" y="-49.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="ch01.step01.ticket.prev.domain.TicketOffice" target="ch01.step01.ticket.prev.domain.Ticket" relationship="DEPENDENCY">
+      <point x="-1.363636363862497E-4" y="-94.0" />
+      <point x="142.4146363636363" y="239.0" />
+      <point x="389.0511363636364" y="239.0" />
+      <point x="389.0511363636364" y="16.5" />
+      <point x="401.0511363636364" y="16.5" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="ch01.step01.ticket.prev.domain.Bag" target="ch01.step01.ticket.prev.domain.Ticket" relationship="TO_ONE">
+      <point x="102.49986363636367" y="-119.5" />
+      <point x="235.91463636363636" y="-66.0" />
+      <point x="345.0511363636364" y="-66.0" />
+      <point x="-56.0" y="0.0" />
+    </edge>
+    <edge source="ch01.step01.ticket.prev.domain.Theater" target="ch01.step01.ticket.prev.domain.Audience" relationship="DEPENDENCY">
+      <point x="-94.5" y="30.0" />
+      <point x="-277.58522727272725" y="394.0" />
+      <point x="-277.58522727272725" y="-182.0" />
+      <point x="-61.0" y="0.0" />
+    </edge>
+    <edge source="ch01.step01.ticket.prev.domain.TicketOffice" target="ch01.step01.ticket.prev.domain.Ticket" relationship="TO_MANY">
+      <point x="-15.000136363636386" y="-94.0" />
+      <point x="127.4146363636363" y="226.0" />
+      <point x="377.0" y="226.0" />
+      <point x="377.0" y="-43.0" />
+      <point x="-56.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="161.0" y="326.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
